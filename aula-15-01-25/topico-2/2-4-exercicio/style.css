@@ -1,0 +1,36 @@
+:root {
+  --cor-principal: #656470;
+  --cor-secundaria: #aeaec7;
+  --padding: 15px;
+  --borda-radius: 5px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-secundaria);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  padding: var(--padding);
+  border-radius: var(--borda-radius);
+  text-align: center;
+}
+
+p {
+  color: var(--cor-principal);
+  font-size: 18px;
+  padding: var(--padding);
+}
+
+a {
+  color: var(--cor-principal);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6347;
+}

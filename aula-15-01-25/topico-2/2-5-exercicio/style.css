@@ -1,0 +1,48 @@
+body {
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: darkblue;
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: lightpink;
+    font-size: 16px;
+  }
+
+  h1 {
+    color: darkgreen;
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: lightblue;
+    font-size: 14px;
+  }
+
+  h1 {
+    color: darkred;
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,25 @@
+/* Estilos com Nesting em SCSS */
+.container h2 {
+  color: green;
+  font-size: 24px;
+}
+.container p {
+  font-size: 16px;
+  color: #333;
+}
+.container p span {
+  color: purple;
+  font-weight: bold;
+}
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+.container ul li {
+  margin: 5px 0;
+}
+.container ul li:hover {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

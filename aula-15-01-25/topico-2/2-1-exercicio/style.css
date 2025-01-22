@@ -1,0 +1,7 @@
+/* Comentários em CSS começam com barra e asterisco */
+
+/* Seletor = h1 */
+h1 {
+  color: blue;       /* Propriedade color define a cor do texto */
+  font-size: 30px;   /* Tamanho da fonte */
+}
