@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gráfico 2D Interativo</title>
+  <!-- Importa o CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gráfico 2D Interativo em SVG</h1>
+
+  <div class="graph-container">
+    <svg id="myChart" width="500" height="300">
+      <line x1="40" y1="250" x2="480" y2="250" stroke="#333" stroke-width="2" />
+      <line x1="40" y1="20" x2="40" y2="250" stroke="#333" stroke-width="2" />
+
+      <text x="40" y="265" font-size="12" text-anchor="middle">0</text>
+      <text x="120" y="265" font-size="12" text-anchor="middle">25</text>
+      <text x="200" y="265" font-size="12" text-anchor="middle">50</text>
+      <text x="280" y="265" font-size="12" text-anchor="middle">75</text>
+      <text x="360" y="265" font-size="12" text-anchor="middle">100</text>
+
+      <text x="30" y="250" font-size="12" text-anchor="middle">0</text>
+      <text x="30" y="180" font-size="12" text-anchor="middle">50</text>
+      <text x="30" y="110" font-size="12" text-anchor="middle">100</text>
+      <text x="30" y="40" font-size="12" text-anchor="middle">150</text>
+
+      <circle id="dataPoint" cx="40" cy="250" r="6" fill="red" />
+    </svg>
+  </div>
+
+  <div class="controls">
+    <label for="xSlider">Valor de X:</label>
+    <input type="range" id="xSlider" min="0" max="100" value="50" />
+    
+    <label for="ySlider">Valor de Y:</label>
+    <input type="range" id="ySlider" min="0" max="150" value="0" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

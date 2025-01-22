@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.graph-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#myChart {
+  background: #fff;
+  border: 2px solid #ccc;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input[type="range"] {
+  width: 200px;
+  cursor: pointer;
+}
+
+circle {
+  transition: cx 0.3s ease, cy 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .graph-container {
+    margin-bottom: 10px;
+  }
+
+  input[type="range"] {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .graph-container {
+    margin-bottom: 10px;
+  }
+
+  input[type="range"] {
+    width: 120px;
+  }
+}
