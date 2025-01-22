@@ -1,0 +1,79 @@
+/* Variáveis para reutilizar */
+:root {
+  --cor-principal: #3498db; /* Cor principal (azul) */
+  --cor-secundaria: #2ecc71; /* Cor secundária (verde) */
+  --fonte-principal: 'Arial', sans-serif;
+  --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-principal);
+  background-color: #f0f0f0;
+}
+
+/* Estilizando header e footer */
+header, footer {
+  background-color: var(--cor-principal);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Container central com margem */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  color: var(--cor-principal);
+}
+
+/* Estilo para parágrafo com destaque */
+.texto-destaque {
+  background-color: #ffebcc;
+  padding: 10px;
+  border-left: 4px solid #ffa500;
+}
+
+/* Estilizando a nova seção sobre o projeto */
+.sobre {
+  background-color: var(--cor-secundaria);
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.sobre h2 {
+  color: white;
+}
+
+.sobre p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  body {
+    background-color: #ddd;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: #ccc;
+  }
+
+  video, img {
+    width: 100%;
+    height: auto;
+  }
+}
