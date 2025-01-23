@@ -1,0 +1,182 @@
+/* Reset de margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+
+/* Estilos do título */
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #28a745;
+}
+
+/* Container do gráfico */
+.graph-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos do gráfico */
+#myChart {
+  background: #fff;
+  border: 2px solid #ccc;
+}
+
+/* Botão de enviar */
+#submitFunc {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submitFunc:hover {
+  background-color: #218838;
+}
+
+#submitFunc:active {
+  background-color: #1e7e34;
+  transform: scale(0.98);
+}
+
+/* Estilo do campo de input para a função */
+#funcInput {
+  width: 300px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  color: #495057;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#funcInput:focus {
+  outline: none;
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.5);
+}
+
+/* Estilos das labels */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+}
+
+/* Estilos do slider (controle de X) */
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; 
+  width: 200px;
+  height: 6px;
+  background: #28a745;
+  border-radius: 5px;
+  outline: none;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #28a745;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #28a745;
+  transform: scale(1.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 2px solid #28a745;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #28a745;
+  transform: scale(1.1);
+}
+
+/* Container dos controles (para exibição de input e slider) */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Estilos do círculo (ponto de dados) */
+circle {
+  transition: cx 0.3s ease, cy 0.3s ease;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+  .graph-container {
+    margin-bottom: 10px;
+  }
+
+  input[type="range"] {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .graph-container {
+    margin-bottom: 10px;
+  }
+
+  input[type="range"] {
+    width: 120px;
+  }
+}
+
+/* Estilo do output (mensagens) */
+#output {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  background-color: #e9f7e7;
+  border: 2px solid #28a745;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
