@@ -20,7 +20,6 @@ function updatePointPosition(xValue, yValue) {
 function processFunction() {
   const funcStr = funcInput.value.trim();
   const regex = /^(-?\d*\.?\d+)?\*?x\s*([\+\-]\s*\d+)?$/;
-  output.classList.remove('error', 'success');
   
   if (!regex.test(funcStr)) {
     alert(`Função inválida. Insira uma função do tipo "a*x+b".`);
